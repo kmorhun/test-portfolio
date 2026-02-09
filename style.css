@@ -43,4 +43,29 @@ nav>a:hover {
     border-bottom: 4px solid oklch(80% 3% 200); 
 }
 
+#contact-title {
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  max-width: 50ch;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: subgrid;
+  
+  label {
+      display: grid;
+      grid-template-columns: .2fr 1fr;
+  }
+
+  button {
+      grid-column: 1 / -1;
+  }
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
    
